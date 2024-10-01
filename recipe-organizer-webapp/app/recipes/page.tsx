@@ -12,10 +12,6 @@ export default async function Recipes() {
 
   let recipes: Recipe[] = JSON.parse(data).recipes;
 
-  async function create() {
-    'use server';
-  }
-
   return (
     <section id="recipes" className="py-20 bg-gray-100">
       <div className="container mx-auto px-6">
