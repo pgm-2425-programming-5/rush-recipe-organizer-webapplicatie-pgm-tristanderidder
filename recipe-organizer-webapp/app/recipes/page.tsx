@@ -13,16 +13,15 @@ export default async function Recipes() {
   let recipes: Recipe[] = JSON.parse(data).recipes;
 
   return (
-    <section id="recipes" className="py-20 bg-gray-100">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
+    <section id="recipes" className="py-10 md:py-20 bg-gray-100">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8 md:mb-12">
           Onze Recepten
         </h2>
-        <div className="flex flex-wrap justify-center">
-            {recipes.map((recipe) => (
-              <RecipeItem key={recipe.name} recipe={recipe} />
-            ))}
-
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-center">
+          {recipes.map((recipe) => (
+            <RecipeItem key={recipe.name} recipe={recipe} />
+          ))}
         </div>
       </div>
     </section>
