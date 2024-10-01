@@ -1,0 +1,99 @@
+{
+  "recipes": [
+    {
+      "name": "Spaghetti Carbonara",
+      "ingredients": [
+        "200g spaghetti",
+        "100g pancetta",
+        "2 large eggs",
+        "50g pecorino cheese",
+        "50g parmesan cheese",
+        "Freshly ground black pepper",
+        "Salt",
+        "2 cloves garlic",
+        "1 tbsp olive oil"
+      ],
+      "instructions": [
+        "Cook the spaghetti in a large pot of salted boiling water according to package instructions.",
+        "While the pasta is cooking, heat the olive oil in a pan and sauté the pancetta until crispy. Add garlic and cook until fragrant.",
+        "In a bowl, beat the eggs and mix in the grated pecorino and parmesan cheeses.",
+        "Drain the pasta, reserving some of the cooking water.",
+        "Quickly mix the hot pasta with the pancetta and garlic, then remove from heat.",
+        "Stir in the egg and cheese mixture, using some reserved pasta water to achieve a creamy consistency.",
+        "Season with freshly ground black pepper and serve immediately."
+      ],
+      "category": "Pasta"
+    },
+    {
+      "name": "Chicken Stir-Fry",
+      "ingredients": [
+        "500g chicken breast, sliced",
+        "1 red bell pepper, sliced",
+        "1 yellow bell pepper, sliced",
+        "1 onion, sliced",
+        "2 cloves garlic, minced",
+        "2 tbsp soy sauce",
+        "1 tbsp oyster sauce",
+        "1 tbsp sesame oil",
+        "1 tsp cornstarch",
+        "1/4 cup chicken broth",
+        "1 tbsp vegetable oil"
+      ],
+      "instructions": [
+        "In a small bowl, mix the soy sauce, oyster sauce, sesame oil, and chicken broth. Set aside.",
+        "Toss the sliced chicken with cornstarch to coat.",
+        "Heat vegetable oil in a wok over medium-high heat and stir-fry the chicken until browned. Remove and set aside.",
+        "In the same wok, add more oil if needed and stir-fry the garlic, onion, and bell peppers until tender.",
+        "Return the chicken to the wok and pour in the sauce mixture.",
+        "Cook everything together for a few more minutes until the sauce thickens.",
+        "Serve the stir-fry with steamed rice."
+      ],
+      "category": "Main Course"
+    },
+    {
+      "name": "Blueberry Pancakes",
+      "ingredients": [
+        "1 cup all-purpose flour",
+        "1 tbsp sugar",
+        "1 tsp baking powder",
+        "1/2 tsp baking soda",
+        "1/4 tsp salt",
+        "1 cup buttermilk",
+        "1 large egg",
+        "2 tbsp melted butter",
+        "1 tsp vanilla extract",
+        "1/2 cup fresh blueberries"
+      ],
+      "instructions": [
+        "In a large bowl, whisk together the flour, sugar, baking powder, baking soda, and salt.",
+        "In another bowl, mix the buttermilk, egg, melted butter, and vanilla extract.",
+        "Gradually combine the wet ingredients with the dry ingredients, stirring until just combined.",
+        "Fold in the fresh blueberries.",
+        "Heat a non-stick pan over medium heat and spoon the batter into the pan to form pancakes.",
+        "Cook until bubbles form on the surface, then flip and cook until golden brown.",
+        "Serve with maple syrup or powdered sugar."
+      ],
+      "category": "Breakfast"
+    },
+    {
+      "name": "Guacamole",
+      "ingredients": [
+        "3 ripe avocados",
+        "1 lime, juiced",
+        "1/2 red onion, finely diced",
+        "1 tomato, chopped",
+        "1 clove garlic, minced",
+        "1 tbsp fresh cilantro, chopped",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Cut the avocados in half, remove the pit, and scoop out the flesh into a bowl.",
+        "Mash the avocados with a fork to your desired consistency.",
+        "Stir in the lime juice, diced red onion, chopped tomato, minced garlic, and cilantro.",
+        "Season with salt and pepper to taste.",
+        "Serve with tortilla chips or use as a topping for tacos."
+      ],
+      "category": "Appetizer"
+    }
+  ]
+}

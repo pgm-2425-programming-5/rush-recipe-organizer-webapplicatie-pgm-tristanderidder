@@ -1,34 +1,34 @@
-"use client";
-import React, { useState } from 'react';
-import Recipe from "../components/Recipes";
+import fs from "fs/promises";
+import path from "path";
+import { Recipe } from "../types/Recipes";
+import RecipeItem from "../components/RecipeItem";
 
-export default function Recipes() {
-  const [category, setCategory] = useState<string | null>(null);
+type RecipeProp = {
+  recipes: Recipe[];
+}
 
-  const recipes = [
-    { name: "Pancakes", ingredients: ["flour", "milk", "eggs"], instructions: "Mix everything together and bake in a pan.", category: "Breakfast" },
-    { name: "Spaghetti", ingredients: ["pasta", "tomato sauce", "meat"], instructions: "Cook pasta and mix with sauce and meat.", category: "Dinner" },
-  ];
+export default async function Recipes() {
+    let data = await fs.readFile(path.join(process.cwd(), "public/data/recipes.json"),"utf-8");
 
-  const filteredRecipes = category ? recipes.filter(recipe => recipe.category === category) : recipes;
+  let recipes: Recipe[] = JSON.parse(data).recipes;
+
+  async function create() {
+    'use server';
+  }
 
   return (
-    <div>
-      <h1>Recipes</h1>
-      <div>
-        <button onClick={() => setCategory(null)}>All</button>
-        <button onClick={() => setCategory("Breakfast")}>Breakfast</button>
-        <button onClick={() => setCategory("Dinner")}>Dinner</button>
+    <section id="recipes" className="py-20 bg-gray-100">
+      <div className="container mx-auto px-6">
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
+          Onze Recepten
+        </h2>
+        <div className="flex flex-wrap justify-center">
+            {recipes.map((recipe) => (
+              <RecipeItem key={recipe.name} recipe={recipe} />
+            ))}
+
+        </div>
       </div>
-      {filteredRecipes.map((recipe, index) => (
-        <Recipe
-          key={index}
-          name={recipe.name}
-          ingredients={recipe.ingredients}
-          instructions={recipe.instructions}
-          category={recipe.category}
-        />
-      ))}
-    </div>
+    </section>
   );
 }
