@@ -1,12 +1,8 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import Link from "next/link";
-import styles from "./styles/Navigation.module.css";
 
 export default function Navigation() {
-  const pathname = usePathname();
-
   return (
     <nav className="bg-gray-800 p-4 md:p-6">
       <h1 className="text-2xl md:text-3xl font-bold text-white text-center mb-4">
@@ -14,7 +10,7 @@ export default function Navigation() {
       </h1>
       <div className="flex justify-center space-x-6">
         <Link
-          href="/addRecipe"
+          href="/addRecipes"
           className="text-white hover:text-blue-400 transition duration-300"
         >
           Add Recipe
